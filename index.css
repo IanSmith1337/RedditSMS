@@ -1,0 +1,96 @@
+body {
+    background-image: url(http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Lovely-Web-Site-Background-Images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    position: absolute;
+    bottom: auto;
+    left: 400px;
+    align-content: center;
+    resize: both;
+}
+
+.layout {
+    text-align: center;
+    overflow: scroll;
+    position: relative;
+    left: 375px;
+    max-height: 400px;
+}
+
+.layout:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.50em;
+    /* Adjusts for spacing */
+}
+
+.Center {
+    vertical-align: left;
+    width: 100px;
+    display: table;
+    position: relative;
+}
+
+.button {
+    position: relative;
+    white-space: normal;
+    width: 500px;
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+.filling {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    text-align: justify;
+    white-space: normal;
+}
+
+.header {
+    text-align: center;
+}
+
+#subSelect {
+    align-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    height: 25px;
+    left: relative;
+    width: 400px;
+}
+
+.changeButton {
+    position: absolute;
+    width: fit;
+    left: 410px;
+    bottom: 0px;
+}
+
+.headers {
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    left: 175px;
+    top: 500px;
+}
+
+.well {
+    position: relative;
+}
+
+.LayoutAbout {
+    position: relative;
+    right: 180px;
+}
+
+.LayoutSMS {
+    position: relative;
+    left: 60px;
+}
