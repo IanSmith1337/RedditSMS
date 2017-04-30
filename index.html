@@ -41,8 +41,8 @@
         <h6 class="footer">By Ian Smith and Chris Guzman</h6>
     </div>
     <!-- Include the Pusher JavaScript library -->
-    <script src="https://js.pusher.com/2.2/pusher.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
         // Open a Pusher connection to the Realtime Reddit API
@@ -55,10 +55,10 @@
         // Switch subs
         function changeSubreddit() {
             $("#Center").empty();
-            console.log("Cleared.")
+            console.log("Cleared.");
             pusher.unsubscribe(subbed);
             subbed = document.getElementsByTagName("input")[0].value;
-            subreddit = pusher.subscribe(subbed.toLowerCase);
+            subreddit = pusher.subscribe(subbed);
             subreddit.bind("pusher:subscription_succeeded", function() {
                 console.log("Connection success.");
             });
