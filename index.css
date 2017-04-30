@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKmCijbwQWGM4K0jeeTpB9yjM_pcP0yDECCxn_FS24lhxC5rZ0);
+    background-image: url(https://www.titanui.com/wp-content/uploads/2016/05/14/blue-geometric-polygon-background-vector-4.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -78,7 +78,6 @@ body {
 .footer {
     position: relative;
     left: 175px;
-    top: 500px;
 }
 
 .well {
