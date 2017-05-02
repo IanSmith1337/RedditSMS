@@ -54,6 +54,7 @@
 
         // Switch subs
         function changeSubreddit() {
+            pusher.unsubscribe(subbed);
             $("#Center").empty();
             console.log("Cleared.");
             subbed = document.getElementsByTagName("input")[0].value;
