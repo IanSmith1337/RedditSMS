@@ -56,7 +56,6 @@
         function changeSubreddit() {
             $("#Center").empty();
             console.log("Cleared.");
-            pusher.unsubscribe(subbed);
             subbed = document.getElementsByTagName("input")[0].value;
             subreddit = pusher.subscribe(subbed);
             subreddit.bind("pusher:subscription_succeeded", function() {
