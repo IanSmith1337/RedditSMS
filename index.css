@@ -91,7 +91,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 540px;
-    height: 475px;
+    height: auto;
 }
 
 .LayoutAbout {
