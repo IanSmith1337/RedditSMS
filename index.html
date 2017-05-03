@@ -4,91 +4,96 @@
 <head>
     <title>RedditSMS</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="favicon-64.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">RedditNotif</a>
+            <div class="navbar-header"><a class="navbar-brand" href="#">RedditSMS</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="not-active"><a href="SMS.html">SMS</a></li>
-                <li class="not-active"><a href="about.html">About</a></li>
-            </ul>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="SMS.html">SMS</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </div>
     <div class="page">
         <h2 class="headers">Live Reddit Feed!</h2>
         <h4 class="headers">Type the title of a subreddit in the box. Do not include the /r/.</h4>
-        <div id="subSelect">
-            <form>
-                <div id="textBox">
-                    <input type="text" id="subSelect">
-                    <input type="button" value="Change Subreddit" onclick="changeSubreddit()" class="changeButton">
-                </div>
-            </form>
-        </div>
-        <div id="Layout" class="Layout">
-            <div class="well">
-                <div id="Center" class="Center"></div>
+        <h5 class="headers">Posts refresh every minute.</h4>
+            <div id="subSelect">
+                <form>
+                    <div id="textBox">
+                        <input type="text" id="subSelect">
+                        <input type="button" value="Change Subreddit" onclick="changeSubreddit()" class="changeButton">
+                    </div>
+                </form>
             </div>
-        </div>
-        <h6 class="footer">By Ian Smith and Chris Guzman</h6>
+            <div id="Layout" class="Layout">
+                <div class="well">
+                    <div id="Center" class="Center"></div>
+                </div>
+            </div>
+            <h6 class="footer">By Ian Smith and Chris Guzman</h6>
     </div>
     <!-- Include the Pusher JavaScript library -->
-    <script src="https://js.pusher.com/2.2/pusher.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
-        // Open a Pusher connection to the Realtime Reddit API
-        var pusher = new Pusher("50ed18dd967b455393ed");
-
         // Init the default subreddit
         var subbed = "askreddit";
-        var subreddit = pusher.subscribe(subbed);
 
         // Switch subs
         function changeSubreddit() {
-            pusher.unsubscribe(subbed);
             $("#Center").empty();
             console.log("Cleared.");
             subbed = document.getElementsByTagName("input")[0].value;
-            subreddit = pusher.subscribe(subbed);
-            subreddit.bind("pusher:subscription_succeeded", function() {
-                console.log("Connection success.");
-            });
             console.log("The current subreddit has been changed to " + subbed + "!");
             subs();
         };
 
+        function reset() {
+            $("#Center").empty();
+            console.log("Reset.");
+            setTimeout(subs, 100);
+        }
+
         // Subscribe to the selected subreddit (lowercase)
         function subs() {
             // Listen for new stories
-            subreddit.bind("new-listing", function(listing) {
+            $.getJSON("http://www.reddit.com/r/" + subbed + "/new.json?sort=new",
+                function foo(data) {
+                    $.each(data.data.children.slice(0, 10),
+                        function get(i, post) {
+                            console.log(data.data.children[i].data);
+                            var listing = data.data.children[i].data;
+                            var firstListing = data.data.children[0].data
+                            var $input = $('<input type="button" class="button"/>');
+                            $input.prop('value', "From " + subbed + ": " + listing.title + " by " + listing.author);
+                            $input.prop('id', i);
+                            $input.click(function() {
 
-                // Output listing to the browser console
-                console.log(listing);
+                                // open a new tab when you click on the button
+                                window.open(listing.url);
 
-                // setup $input, the button
-                var $input = $('<input type="button" class="button"/>');
-                $input.prop('value', "New post: " + listing.title + " by " + listing.author);
-                $input.click(function() {
-
-                    // open a new tab when you click on the button
-                    window.open(listing.url);
-
+                            });
+                            //Create buttons
+                            $input.appendTo($("#Center"));
+                        }
+                    );
                 });
-                //Create buttons
-                $input.appendTo($("#Center"));
-            });
+            setTimeout(reset, 60000);
         };
-
-        // Init the main function
         subs();
 
     </script>

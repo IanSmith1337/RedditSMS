@@ -1,6 +1,6 @@
 body {
-    background-image: url(https://www.titanui.com/wp-content/uploads/2016/05/14/blue-geometric-polygon-background-vector-4.png);
-    background-repeat: no-repeat;
+    background-image: url(http://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -10,6 +10,7 @@ body {
     left: 400px;
     align-content: center;
     resize: both;
+    color: whitesmoke;
 }
 
 .layout {
@@ -41,6 +42,7 @@ body {
     width: 500px;
     display: table-cell;
     margin-bottom: 10px;
+    color: black;
 }
 
 .filling {
@@ -62,6 +64,7 @@ body {
     height: 25px;
     left: relative;
     width: 400px;
+    color: black;
 }
 
 .changeButton {
@@ -69,6 +72,7 @@ body {
     width: fit;
     left: 410px;
     bottom: 0px;
+    color: black;
 }
 
 .headers {
@@ -82,6 +86,12 @@ body {
 
 .well {
     position: relative;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/somacro___dpi_social_media_icons_by_vervex-dfjq/500/reddit.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 540px;
+    height: 475px;
 }
 
 .LayoutAbout {
@@ -92,4 +102,55 @@ body {
 .LayoutSMS {
     position: relative;
     left: 60px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(0, 0, 0, 1);
+}
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-radius: 50px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+
+.notifSubmit {
+    color: black;
 }
