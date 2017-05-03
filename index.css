@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
+    background-image: url(http://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
@@ -7,7 +7,7 @@ body {
 .page {
     position: absolute;
     bottom: auto;
-    left: 400px;
+    left: 30%;
     align-content: center;
     resize: both;
     color: whitesmoke;
@@ -81,7 +81,13 @@ body {
 
 .footer {
     position: relative;
-    left: 175px;
+    align-content: center;
+    left: 30%;
+}
+
+.footerabout {
+    position: relative;
+    left: 20%;
 }
 
 .well {
@@ -90,13 +96,13 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 540px;
-    height: auto;
+    width: 100%;
+    height: 75%;
 }
 
 .LayoutAbout {
     position: relative;
-    right: 180px;
+    right: 20%;
 }
 
 .LayoutSMS {
@@ -118,16 +124,12 @@ body {
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(255, 255, 255, 1);
-    border-width: 1px;
-    border-radius: 50px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 1);
-    border-width: 1px;
-    border-radius: 50px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,

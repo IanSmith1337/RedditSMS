@@ -46,7 +46,8 @@
             <h6 class="footer">By Ian Smith and Chris Guzman</h6>
     </div>
     <!-- Include the Pusher JavaScript library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
         // Init the default subreddit
@@ -70,7 +71,7 @@
         // Subscribe to the selected subreddit (lowercase)
         function subs() {
             // Listen for new stories
-            $.getJSON("https://www.reddit.com/r/" + subbed + "/new.json?sort=new",
+            $.getJSON("http://www.reddit.com/r/" + subbed + "/new.json?sort=new",
                 function foo(data) {
                     $.each(data.data.children.slice(0, 10),
                         function get(i, post) {
