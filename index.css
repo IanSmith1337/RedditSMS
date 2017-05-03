@@ -1,5 +1,5 @@
 body {
-    background-image: url(http://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
+    background-image: url(https://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
@@ -17,8 +17,8 @@ body {
     text-align: center;
     overflow: scroll;
     position: relative;
-    left: 375px;
-    max-height: 400px;
+    left: 50%;
+    max-height: 75%;
 }
 
 .layout:before {
