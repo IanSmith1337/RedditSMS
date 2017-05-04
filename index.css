@@ -1,15 +1,26 @@
 body {
-    background-image: url(https://www.pixeden.com/media/k2/galleries/220/006-wood-melamine-subttle-pattern-background-pat.jpg);
+    background-image: url(http://orig06.deviantart.net/1339/f/2014/122/6/e/blueprint_bg_by_hexdef101-d7gsroi.png);
     background-repeat: repeat;
     background-size: cover;
 }
 
 .page {
-    position: absolute;
+    position: relative;
     bottom: auto;
-    left: 30%;
     align-content: center;
-    resize: both;
+    width: 50%;
+    left: 25%;
+    height: 50%;
+    color: whitesmoke;
+}
+
+.pageAbout {
+    position: relative;
+    bottom: auto;
+    align-content: center;
+    width: 50%;
+    left: 36%;
+    height: 50%;
     color: whitesmoke;
 }
 
@@ -18,6 +29,7 @@ body {
     overflow: scroll;
     position: relative;
     left: 50%;
+    width: auto;
     max-height: 75%;
 }
 
@@ -31,7 +43,7 @@ body {
 
 .Center {
     vertical-align: left;
-    width: 100px;
+    width: 80%;
     display: table;
     position: relative;
 }
@@ -39,75 +51,116 @@ body {
 .button {
     position: relative;
     white-space: normal;
-    width: 500px;
+    width: 125%;
     display: table-cell;
     margin-bottom: 10px;
     color: black;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-weight: 900;
+    font: 400 1.2vw/100% 'Patrick Hand', Helvetica, Sans-serif;
+    word-wrap: break-word;
 }
 
 .filling {
     display: inline-block;
     position: relative;
-    font-size: 18px;
     text-align: justify;
     white-space: normal;
+    font-family: 'Prime', serif;
+    font-size: 1.5vw;
+    width: 100%;
+    word-wrap: break-word;
 }
 
-.header {
+.headerAbout {
+    position: relative;
     text-align: center;
+    font-family: 'Prime', serif;
+    font-size: 2vw;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 #subSelect {
     align-content: center;
     position: relative;
     margin-bottom: 10px;
-    height: 25px;
-    left: relative;
-    width: 400px;
+    height: 3vh;
+    left: 2.5vw;
+    width: 25vw;
     color: black;
 }
 
 .changeButton {
-    position: absolute;
-    width: fit;
-    left: 410px;
-    bottom: 0px;
+    position: relative;
+    width: 50%;
+    left: 29vw;
+    bottom: 4.75vh;
     color: black;
+    font-size: 1.25vw;
+    font-family: 'Prime', serif;
 }
 
-.headers {
+.headers1 {
     text-align: center;
+    font-family: 'Prime', serif;
+    font-size: 2vw;
 }
 
-.footer {
+.headers2 {
     position: relative;
-    align-content: center;
-    left: 30%;
+    text-align: justify;
+    font-family: 'Prime', serif;
+    font-size: 1.25vw;
+    width: 100%;
+    word-wrap: break-word;
+    width: 75%;
+    left: 7vw;
 }
 
-.footerabout {
+.headers3 {
     position: relative;
-    left: 20%;
+    text-align: center;
+    font-family: 'Prime', serif;
+    font-size: 1.25vw;
+    width: 100%;
+    word-wrap: break-word;
+    width: 75%;
+    left: 12.5%;
 }
 
 .well {
     position: relative;
-    background-image: url(https://cdn1.iconfinder.com/data/icons/somacro___dpi_social_media_icons_by_vervex-dfjq/500/reddit.png);
-    background-size: contain;
+    background-image: url(http://pre04.deviantart.net/3a51/th/pre/i/2015/198/a/1/phb_background_texture_by_kluckham-d91rf3o.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 75%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .LayoutAbout {
     position: relative;
-    right: 20%;
+    right: 10vw;
 }
 
 .LayoutSMS {
     position: relative;
-    left: 60px;
+    left: 8vw;
+    font-family: 'Prime', serif;
+    font-size: 1.25vw;
+    width: 100%;
+    word-wrap: break-word;
+    width: 75%;
+    left: 12.5%;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -130,6 +183,8 @@ body {
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-radius: 50px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
@@ -137,6 +192,8 @@ body {
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(231, 231, 231, 1);
+    border-width: 1px;
+    border-radius: 50px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
@@ -159,4 +216,9 @@ body {
 
 .notifSubmit {
     color: black;
+}
+
+@font-face {
+    font-family: "Prime";
+    src: url(PrimeRegular.otf);
 }
