@@ -62,7 +62,8 @@ body {
     overflow: hidden;
     outline: none;
     font-weight: 900;
-    font: 400 1.2vw/100% 'Patrick Hand', Helvetica, Sans-serif;
+    font-family: "Quantico", sans-serif;
+    font-size: 1.2vw;
     word-wrap: break-word;
 }
 
@@ -221,4 +222,9 @@ body {
 @font-face {
     font-family: "Prime";
     src: url(PrimeRegular.otf);
+}
+
+@font-face {
+    font-family: "Quantico";
+    src: url(Quantico-Regular.ttf);
 }
