@@ -1,3 +1,69 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .page {
+        position: relative;
+        bottom: auto;
+        align-content: center;
+        width: 50%;
+        left: 25%;
+        height: 50%;
+        color: whitesmoke;
+    }
+    .button {
+        position: relative;
+        white-space: normal;
+        width: 125%;
+        display: table-cell;
+        margin-bottom: 10px;
+        color: black;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        font-weight: 900;
+        font-family: "Quantico", sans-serif;
+        font-size: 8px;
+        word-wrap: break-word;
+    }
+    .headers1 {
+        text-align: center;
+        font-family: 'Prime', serif;
+        font-size: 15px;
+    }
+    .headers2 {
+        position: relative;
+        text-align: justify;
+        font-family: 'Prime', serif;
+        font-size: 10px;
+        width: 100%;
+        word-wrap: break-word;
+        width: 75%;
+        left: 14.5%;
+    }
+    .headers3 {
+        position: relative;
+        text-align: center;
+        font-family: 'Prime', serif;
+        font-size: 10px;
+        width: 100%;
+        word-wrap: break-word;
+        width: 75%;
+        left: 12.5%;
+    }
+    .changeButton {
+        position: relative;
+        width: 53%;
+        left: 80%;
+        bottom: 30%;
+        color: black;
+        font-size: 1px;
+        font-family: 'Prime', serif;
+        bottom: 4.68vh;
+    }
+}
+
 body {
     background-image: url(http://orig06.deviantart.net/1339/f/2014/122/6/e/blueprint_bg_by_hexdef101-d7gsroi.png);
     background-repeat: repeat;
@@ -63,7 +129,7 @@ body {
     outline: none;
     font-weight: 900;
     font-family: "Quantico", sans-serif;
-    font-size: 1vw;
+    font-size: 13px;
     word-wrap: break-word;
 }
 
@@ -92,47 +158,47 @@ body {
     position: relative;
     margin-bottom: 10px;
     height: 3vh;
-    left: 2.5vw;
-    width: 25vw;
+    width: 75%;
     color: black;
+    border: 3px #CCCCCC;
 }
 
 .changeButton {
     position: relative;
-    width: 50%;
-    left: 29vw;
-    bottom: 4.75vh;
+    width: 53%;
+    left: 80%;
+    bottom: 30%;
     color: black;
-    font-size: 1.25vw;
+    font-size: 13px;
     font-family: 'Prime', serif;
+    bottom: 4.68vh;
 }
 
 .headers1 {
     text-align: center;
     font-family: 'Prime', serif;
-    font-size: 2vw;
+    font-size: 25px;
 }
 
 .headers2 {
     position: relative;
-    text-align: justify;
+    text-align: center;
     font-family: 'Prime', serif;
-    font-size: 1.25vw;
-    width: 100%;
-    word-wrap: break-word;
+    font-size: 15px;
     width: 75%;
-    left: 7vw;
+    word-wrap: break-word;
+    left: 14.5%;
 }
 
 .headers3 {
     position: relative;
     text-align: center;
     font-family: 'Prime', serif;
-    font-size: 1.25vw;
+    font-size: 15px;
     width: 100%;
     word-wrap: break-word;
     width: 75%;
-    left: 12.5%;
+    left: 14.5%;
 }
 
 .well {
@@ -150,14 +216,14 @@ body {
 
 .LayoutAbout {
     position: relative;
-    right: 10vw;
+    right: 25%;
 }
 
 .LayoutSMS {
     position: relative;
-    left: 8vw;
+    left: 50%;
     font-family: 'Prime', serif;
-    font-size: 1.25vw;
+    font-size: 20px;
     width: 100%;
     word-wrap: break-word;
     width: 75%;
