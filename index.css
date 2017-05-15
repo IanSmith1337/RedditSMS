@@ -57,9 +57,9 @@
         width: 100%;
         left: 80%;
         color: black;
-        font-size: 1ex;
+        font-size: 1px;
         font-family: 'Prime', serif;
-        bottom: 4.68vh;
+        bottom: 4.75vh;
         background-color: white;
         -webkit-appearance: none;
     }
