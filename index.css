@@ -62,6 +62,7 @@
         font-family: 'Prime', serif;
         bottom: 4.68vh;
         background-color: white;
+        -webkit-appearance: none;
     }
     #custom-bootstrap-menu.navbar-default .navbar-brand {
         color: rgba(0, 0, 0, 1);
