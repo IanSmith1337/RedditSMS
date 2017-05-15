@@ -24,7 +24,7 @@
         outline: none;
         font-weight: 900;
         font-family: "Quantico", sans-serif;
-        font-size: 8px;
+        font-size: 200px;
         word-wrap: break-word;
     }
     .headers1 {
@@ -109,7 +109,7 @@
 body {
     background-image: url(http://orig06.deviantart.net/1339/f/2014/122/6/e/blueprint_bg_by_hexdef101-d7gsroi.png);
     background-repeat: repeat;
-    background-size: cover;
+    background-size: stretch;
 }
 
 .page {
