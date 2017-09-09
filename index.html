@@ -75,8 +75,6 @@
                     $.each(data.data.children.slice(0, 10),
                         function get(i, post) {
                             console.log(data.data.children[i].data);
-                            var listing = data.data.children[i].data;
-                            var firstListing = data.data.children[0].data
                             var $input = $('<input type="button" class="button"/>');
                             $input.prop('value', "From " + subbed + ": " + listing.title + " by " + listing.author);
                             $input.prop('id', i);
