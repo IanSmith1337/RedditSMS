@@ -51,7 +51,18 @@
     <script>
         // Init the default subreddit
         var subbed = "askreddit";
+        var textLocation = document.getElementById("subSelect)
+        textLocation.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                validate(e);
+            }
+        });
 
+        function validate(e) {
+        var text = e.target.value;
+        //validation of the input...
+        };
+        
         // Switch subs
         function changeSubreddit() {
             $("#Center").empty();
