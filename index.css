@@ -1,7 +1,3 @@
-body {
-    background-color: black;
-}
-
 .page {
     position: relative;
     bottom: auto;
@@ -9,6 +5,7 @@ body {
     width: 50%;
     left: 25%;
     height: 50%;
+    background-color: black;
 }
 
 .pageAbout {
